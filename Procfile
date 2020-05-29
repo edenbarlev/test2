@@ -1,1 +1,2 @@
-web: gunicorn excelproject.wsgi:application --log-file -
+release: python manage.py migrate
+web: gunicorn excelproject.wsgi --log-file -
