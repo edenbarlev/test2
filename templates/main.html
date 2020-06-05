@@ -6,10 +6,33 @@
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/main1234.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fileupload.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'js/fileupload.js' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'js/jquery.min.js' %}">
 </head>
 {% include 'header.html' %}
 <body class="main-content">
- this is my main page
+ <div class="loading-data">
+    <h2> טעינת הקבצים </h2>
+<div class="file-upload">
+
+  <div class="image-upload-wrap">
+    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+    <div class="drag-text">
+      <h3>גרור לכאן את הקובץ אותו תרצה להעלות</h3>
+    </div>
+  </div>
+  <div class="file-upload-content">
+    <img class="file-upload-image" src="#" alt="your image" />
+    <div class="image-title-wrap">
+      <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+    </div>
+  </div>
+      <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">טעינה</button>
+
+</div>
+
+ </div>
 </body>
 {% include 'footer.html' %}
 </html>
