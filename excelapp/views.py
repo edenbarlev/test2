@@ -16,7 +16,7 @@ def about(request):
 
 
 def loading(request):
-    template = 'loader.html'
+    template = 'excelapp/loader.html'
     return render(request, template)
 
 def uploading(request):
@@ -27,5 +27,5 @@ def contact(request):
     return HttpResponse('contant view')
 
 def index(request):
-    template = 'loader.html'
+    template = 'excelapp/loader.html'
     return render(request, template)

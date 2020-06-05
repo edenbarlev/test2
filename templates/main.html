@@ -1,10 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main1234.css' %}">
 </head>
-<body>
-<p> this is my main page </p>
+{% include 'header.html' %}
+<body class="main-content">
+ this is my main page
 </body>
+{% include 'footer.html' %}
 </html>
