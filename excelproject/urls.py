@@ -24,5 +24,6 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name='main.html'), name='home'),
     path('admin/', admin.site.urls),
     path('about/', include('excelapp.urls')),
+    path('about/abt2', include('excelapp.urls')),
 
 ]

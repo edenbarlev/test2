@@ -1,10 +1,49 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-</head>
-<body>
 
-</body>
+</head>
+  <!-- NAVBAR -->
+    <header class="site-navbar mt-3">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="site-logo col-6">
+            <img src="{% static 'images/logo.png'' %}" alt="My image">
+          </div>
+
+          <nav class="mx-auto site-navigation">
+            <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+              <li><a href="index.html" class="nav-link">עמוד הבית</a></li>
+              <li><a href="about.html" class="active">אודות</a></li>
+              <li class="has-children">
+                <a href="services.html">אפליקציות</a>
+                <ul class="dropdown">
+                  <li><a href="services.html">טעינת קובץ</a></li>
+                  <li><a href="service-single.html">ניתוח עפ"י מטרה</a></li>
+                  <li><a href="blog-single.html">ניתוח עפ"י סטטיסטיקה</a></li>
+                  <li><a href="portfolio.html">פורטפוליו</a></li>
+                </ul>
+              </li>
+              <li><a href="blog.html">הבלוג</a></li>
+              <li><a href="contact.html">יצירת קשר</a></li>
+              <li class="d-lg-none"><a href="post-job.html"><span class="mr-2">+</span> Post a Job</a></li>
+              <li class="d-lg-none"><a href="login.html">Log In</a></li>
+            </ul>
+          </nav>
+
+          <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
+            <div class="ml-auto">
+              <a href="post-job.html" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>פרסום אקסל</a>
+              <a href="login.html" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>התחברות</a>
+            </div>
+            <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
+          </div>
+
+        </div>
+      </div>
+        <body>
+
 </html>

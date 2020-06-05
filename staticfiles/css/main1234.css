@@ -33,7 +33,39 @@
 body, html {
 	height: 100%;
 	font-family: Montserrat-Regular, sans-serif;
-	  background: -webkit-linear-gradient(top, #909090, #dedede);
+	  background: -webkit-linear-gradient(top, #dedede, #909090);
+	  position:relative;
+	    direction: rtl;
+
+background-image: url({% static '/images/data-sience.jpg' %});
+
+}
+.loading-data{
+    font-family: 'heebo';
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+    width:100%;
+    positio:relative;
+    background: white;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#excelUpload {
+  position: relative;
+  top: 150px;
+  font-family: heebo;
+  width: 150px;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px dashed #BBB;
+  text-align: center;
+  background-color: #DDD;
+  cursor: pointer;
 }
 
 /*---------------------------------------------*/

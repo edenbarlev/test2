@@ -33,22 +33,44 @@
 body, html {
 	height: 100%;
 	font-family: Montserrat-Regular, sans-serif;
-	  background: -webkit-linear-gradient(top, #dedede, #909090);
-	  position:relative;
-	    direction: rtl;
-
+	/*background: -webkit-linear-gradient(top, #dedede, #909090);*/
+	position:relative;
+	direction: rtl;
+text-align: rtl!important;
 
 }
 .loading-data{
     font-family: 'heebo';
     text-align: center;
     padding: 15px;
-    margin-top: 10px;
+    margin-top: 50px;
     width:100%;
     positio:relative;
     background: white;
 }
 
+.showing-data{
+    font-family: 'heebo';
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding: 15px;
+    width:100%;
+    positio:relative;
+    background: #0c2b33bf;
+}
+
+.site-logo img{
+    width: 14%;
+}
+.informatio {
+    table-border: 4px solid white;
+}
+.showing-data h2 {
+    font-size: 2.3rem;
+    color: white;
+    margin: 2px 5px;
+}
 input[type="file"] {
     display: none;
 }
@@ -66,7 +88,9 @@ input[type="file"] {
   background-color: #DDD;
   cursor: pointer;
 }
-
+img {
+width: 50%;
+}
 /*---------------------------------------------*/
 a {
 	font-family: Montserrat-Regular;
