@@ -1,0 +1,14 @@
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
+
+mimetypes.add_type("text/css", ".css", True)
+WHITENOISE_MIMETYPES = {
+    '.xsl': 'application/xml'
+}
+
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = 'c6u97vs1!)^%2sj1t#al_gq#uxgb(s1=9jp1^0u)aszasi%9oq'

@@ -24,5 +24,6 @@ urlpatterns = [
     path('about/', views.about, name='blog-about'),
     path('abt2/', views.about, name='blog-about'),
     path('lnd/', views.loading, name='loading'),
-    path('upld/', views.uploading, name='uploading-form')
+    path('upld/', views.uploading, name='uploading-form'),
+    path('form/', views.form, name='uploading-form2'),
 ]

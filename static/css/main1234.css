@@ -74,9 +74,10 @@ text-align: rtl!important;
     color: white;
     margin: 2px 5px;
 }
+/*
 input[type="file"] {
     display: none;
-}
+}*/
 
 #excelUpload {
   position: relative;

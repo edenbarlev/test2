@@ -1,0 +1,28 @@
+
+  {%include 'basicStyles.html'%}
+  {%include 'header.html'%}
+<section class="row align-items-center justify-content-center ">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-12">
+            <div class="mb-5 text-center margin-top">
+              <h1 class="text-white font-weight-bold">טעינת אקסל</h1>
+             <h2 class="text-white">
+                בעמוד זה יש לטעון את הקובץ אותו תרצו לערוך.
+            </h2>
+            </div>
+              <div class="row mb-5">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-12 mb-4 mb-lg-0">
+                {% block content %}
+                  <form method="post" enctype="multipart/form-data" class="upload-d text-center">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-primary btn-lg btn-block text-white btn-search">טעינה</button>
+                  </form>
+                  {% endblock %}
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+</section>
